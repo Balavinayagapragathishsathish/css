@@ -1,0 +1,75 @@
+<div class="home-page">
+    <div class="menu-bar">
+        <div class="header">Covid</div>
+        <ul>
+            <li>Home</li>
+            <li class="dropdown">
+                <button class="dropbtn">Presentation +</button>
+                <div class="dropdown-content">
+                    <a href="#">Present 1</a>
+                    <a href="#">Present 2</a>
+                    <a href="#">Present 3</a>
+                </div>
+            </li>                    
+            <li>Symptoms</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </div>    
+    <div class="dash-board">
+        <div class="detail">
+            <div class="topic">Covid -19 awarness</div>
+            <h1>stay safe. stay home</h1>
+            <div class="information">Loreum ipsum dolor sit amet, consecutetur adipiscing elit. Vel a, nulla incidunt eaque sit prasentium porro consectetur optio!</div>
+            <button class="button">how to prevent</button>
+        </div>
+        <img src="assets/images/people1.png">        
+    </div>
+    <div class="statistics">
+        <h2>Coronavirus Statistics</h2>        
+        <div class="text">Loreum ipsum dolor sit amet, consectetur adipising elit. Amet colupte!</div>
+    </div>
+    <div class="count">
+        <div class="report">
+                <img src="assets/images/corona.png">
+                <h3>14,112,077</h3>
+                <p>Active cases</p>
+        </div>
+        <div class="report">
+                <img src="assets/images/corona.png"> 
+                <h3>595658</h3>
+                <p>Deaths</p>
+        </div>
+        <div class="report">
+                <img src="assets/images/corona.png">
+                <h3>8397665</h3>
+                <p>Recovered cases</p>
+        </div>                        
+    </div>
+    <div class="footer">
+            <video height="240" width="320" controls autoplay>
+                <source src="assets/videos/sample-mp4-file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="about">
+                <h2>What is Coronavirus?</h2>
+                <p>Loreum ipsum dolor sit amet consectur adipicing elit. Ex officio quas modi sit numquam</p>
+                <ul>
+                    <li>Loreum ipsum dolor sit amet</li>
+                    <li>Consectetur adipising elit</li>
+                    <li>Unde doloremque</li>
+                </ul>
+                <button class="button">Learn more</button>
+            </div>
+    </div>
+</div>
+<script>
+    let menuBar = document.getElementsByClassName('menu-bar')[0];
+    window.addEventListener('scroll', () => {
+        if (menuBar.offsetTop > 8) {
+            menuBar.classList.add('white-background');
+        } else {
+            menuBar.classList.remove('white-background');            
+        }
+    });
+</script>
